@@ -1,4 +1,4 @@
-<h1 align="center">Calculator Project</h1>
+<h1 align="center">Sign-Up Form</h1>
 <hr></hr>
 
 <h3 align="left">Description:</h3>
@@ -22,4 +22,4 @@
 </ul>
 <hr></hr>
 <h4>Live Preview</h4>
- <a href="https://tar-genius.github.io/Calculator/">Here</a>
+ <a href="https://tar-genius.github.io/Sign-Up/">Here</a>
