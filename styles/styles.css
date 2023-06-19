@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@200&family=IBM+Plex+Sans:wght@100&display=swap');
+:root{
+   --iconTop: clamp(20px, 20%, 200px);
+   --ImgDivWidth: clamp(200px,35vw, 500px);
+   --formpad: clamp(10px, 5%, 50px);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+}
+.img{
+   width: var(--ImgDivWidth);
+   object-fit: cover;
+   display: flex;
+   flex-direction: column;
+   max-height: 100vh;
+   overflow: hidden;
+}
+.img>img{
+    height: inherit;
+    width: inherit;
+}
+.img>#icon{
+    position: absolute;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.4;
+    top: var(--iconTop);
+    padding-top: max(10px,4vh);
+    padding-bottom:max(10px,4vh);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    z-index: 1;
+}
+.form>.heading{
+    font-size: 1.1rem;
+    color: white;
+}
+.heading>p{
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+.form{
+    padding: var(--formpad);
+    background-color: #29303a;
+    flex-grow: 1;
+}
+form{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+form>p{
+    margin-bottom: 0;
+}
+fieldset{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 9%;
+}
+p[class^='verif']{
+    display: none;
+    color: red;
+}
+div[data-size^='Num' i]{
+    display: flex;
+    flex-direction: column;
+}
+input:focus{
+    border: 3px solid blue !important;
+}
+input{
+    font-size: 1.1rem;
+}
+button{
+    font-size: medium;
+    margin-top: var(--buttonMar);
+    display: flex;
+    justify-content: center;
+    background-color: #596D48;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 8px;
+}
+p>a{
+    color: #596D48;
+}
+.valid{
+    border: green 2px solid !important;
+}
+.invalid{
+    border: red 3px solid !important;
+}
+.invalid+p{
+    display: block;
+}
+button:hover{
+    cursor: pointer;
+}

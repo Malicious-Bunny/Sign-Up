@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/script.js" defer></script>
+    <title>Sign up</title>
+</head>
+<body>
+<div class="img">
+    <span id="icon">
+        <h2>"Grunge Is Dead🤍"</h2>
+    </span>
+    <img src="styles/InUtero.jpeg" alt="Pexel">
+</div>
+<div class="form">
+    
+    <div class="heading"> <p>This is A ONCE IN A LIFETIME EVENT. Sign-Up or Log-in to get a Free NIRVANA ticket.
+        </p>
+        <p>.....You know you want to</p></div>
+        <form action="#" method="post">
+            
+            <div class="big">
+                <caption><h3>Let's Do This!</h3></caption>
+                <fieldset class="names">
+                    <div data-size="Num1">
+                        <label for="first">*First Name</label>
+                        <input type="text" name="First" id="first" required>
+                        <p class="verif">Enter a valid Name!</p>
+                    </div>
+                    <div data-size="Num2">
+                        <label for="last">*Last Name</label>
+                        <input type="text" name="Last" id="last" required>
+                        <p class="verif">Enter a valid Name!</p>
+                    </div>
+                </fieldset>
+                <fieldset class="emal" >
+                    <div  data-size="Num3">
+                        <label for="email">*Email</label>
+                        <input type="email" name="Email" id="email" required>
+                    </div>
+                    <div data-size="Num4">
+                        <label for="phone">*Phone Number</label>
+                        <input type="tel" name="Phone" id="phone" required>
+                        <p class="verif">Please enter a CMR-Phone Number!</p>
+                    </div>
+                </fieldset>
+                <fieldset class="password">
+                    <div data-size="Num5">
+                        <label for="password">*Password</label>
+                        <input type="password" name="Password" id="password" class="error" required>
+                        <p class="verif">Passwords be 8-16 long and have symbols babe</p>
+                    </div>
+                    <div data-size="Num6">
+                        <label for="confirm">*Confirm Password</label>
+                        <input type="password" name="Confirm" id="confirm" class="error" required>
+                        <p class="verif">Passwords Dont match</p>
+                    </div>
+                </fieldset>
+            </div>
+            <button type="submit" id="submit">Create Account</button>
+
+            <p>Already have an account? <a href="login.php">Log in</a></p>
+        </form>
+</div>
+    
+</body>
+</html>
