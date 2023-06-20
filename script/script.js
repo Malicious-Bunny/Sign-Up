@@ -5,7 +5,19 @@ let regex={
     First: /^[A-Za-z\-]+$/i,
     Phone: /237\-6[\d]{7}/
 }
-
+let button=document.querySelector('#submit');
+button.addEventListener('click',(e)=>{
+    let count=0;
+    form.forEach(input=>{
+        error(input,regex[input.name])
+        if(input.className=='valid'){
+            count++;
+        }
+    });
+    if(count==5){
+        e.target.preventDefault();
+    }
+})
 let form=document.querySelectorAll('input');
  function error(input,regex){
         if(regex.test(input.value)){
